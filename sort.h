@@ -24,9 +24,7 @@ typedef struct listint_s
 
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
-void move_to_loc(listint_t *nodeToMove, listint_t *prevNode);
-void partition(int *array, int low, int high, size_t size);
-void move_to_head(listint_t *head, listint_t *nodeToMove);
+int partition(int *array, int low, int high, size_t size);
 
 void array_swap(int *array, int a, int b);
 void swap_head(listint_t **list, listint_t *aux);
